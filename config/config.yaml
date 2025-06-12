@@ -5,3 +5,10 @@ data_ingestion:
   source_url: https://github.com/DxSUVII/Braching-dummy/raw/refs/heads/main/winequality-data.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+# here data validation done before training the model
+data_validation:
+ root_dir: artifacts/data_validation # create new file in artifacts for data validation
+ unzip_data_dir: artifacts/data_ingestion/winequality-red.csv  #check data is correct format or not /vlidate the data
+ STATUS_FILE: artifacts/data_validation/status.txt # if the data format is correct it return true 
+  

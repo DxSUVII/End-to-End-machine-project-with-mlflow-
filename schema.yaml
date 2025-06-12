@@ -1,1 +1,21 @@
-key : val
+# This file defines the schema for the wine quality dataset.
+#how many columns data is cointaing okay and what is the name a nd datatype of each column from the wine datset
+
+
+COLUMNS:
+  fixed acidity: float64
+  volatile acidity: float64
+  citric acid: float64
+  residual sugar: float64
+  chlorides: float64
+  free sulfur dioxide: float64
+  total sulfur dioxide: float64
+  density: float64
+  pH: float64
+  sulphates: float64
+  alcohol: float64
+  quality: int64
+
+TARGET_COLUMN:
+  name: quality
+  type: int64
