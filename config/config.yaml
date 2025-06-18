@@ -12,3 +12,18 @@ data_validation:
  unzip_data_dir: artifacts/data_ingestion/winequality-red.csv  #check data is correct format or not /vlidate the data
  STATUS_FILE: artifacts/data_validation/status.txt # if the data format is correct it return true 
   
+
+# data transformation
+#data transformation used for data cleaning and feature engineering
+#here we are using the data validation file to check the data is correct or not
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/winequality-red.csv
+
+
+# model training create new model it saved the model after triain and testing 
+model_trainer:
+ root_dir: artifacts/model_trainer
+ train_Data_path: artifacts/data_transformation/train.csv
+ test_data_path: artifacts/data_transformation/test.csv
+ model_name: model.joblib
