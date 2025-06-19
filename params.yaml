@@ -1,1 +1,6 @@
-key: val
+# here parametre values are defined
+# these values can be used in the code
+# # model_evaluation:
+ElasticNet:
+  alpha: 0.5
+  l1_ratio: 0.7
