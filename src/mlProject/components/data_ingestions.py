@@ -22,7 +22,7 @@ class DataIngestion:
             )
             logger.info(f"{filename} downloaded with follwing  info: \n{headers}")
         else:
-            logger.info(f"file a;reday exist if size: {get_size(self.config.local_data_file)}")
+            logger.info(f"file a;reday exist if size: {get_size(Path(self.config.local_data_file))}")
 
 
 

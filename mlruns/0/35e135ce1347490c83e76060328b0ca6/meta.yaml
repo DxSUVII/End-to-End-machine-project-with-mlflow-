@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/GEN-AI/End-to-End-machine-project-with-mlflow-/mlruns/0/35e135ce1347490c83e76060328b0ca6/artifacts
+end_time: 1751451043815
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 35e135ce1347490c83e76060328b0ca6
+run_name: abundant-shrike-791
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751451043411
+status: 3
+tags: []
+user_id: user

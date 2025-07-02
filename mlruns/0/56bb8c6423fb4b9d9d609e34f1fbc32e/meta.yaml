@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/GEN-AI/End-to-End-machine-project-with-mlflow-/mlruns/0/56bb8c6423fb4b9d9d609e34f1fbc32e/artifacts
+end_time: 1751461266123
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 56bb8c6423fb4b9d9d609e34f1fbc32e
+run_name: capable-ape-44
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751461265531
+status: 3
+tags: []
+user_id: user

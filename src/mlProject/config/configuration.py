@@ -1,7 +1,10 @@
 from mlProject.constants import * 
 from mlProject.utils.common import read_yaml,create_directories
 from mlProject.entity.config_entity import (DataIngestionConfig,
-                                            DataValidationConfig,DataTransformationConfig,ModelTrainerConfig)
+                                            DataValidationConfig,
+                                            DataTransformationConfig,
+                                            ModelTrainerConfig,
+                                            ModelEvaluationsConfig)
 
 
 class ConfigurationManger:
@@ -86,3 +89,23 @@ class ConfigurationManger:
           )
 
           return model_trainer_config
+
+
+# here # we are creating a method to get the model evaluation config
+# this method will return the ModelEvaluationsConfig object which contains all the necessary information for model evaluation
+# 
+    def get_model_evalution_config(self) -> ModelEvaluationsConfig:
+        config = self.config.model_evaluations
+        params = self.params.ElasticNet
+        schema = self.schema.TARGET_COLUMN
+
+        model_evaluation_config = ModelEvaluationsConfig(
+            root_dir=config.root_dir,
+            test_data_path=config.test_data_path,
+            model_path=config.model_path,
+            all_params=params,
+            metric_file_name=config.metric_file_name,
+            target_column=schema.name,
+            mlflow_uri="https://dagshub.com/dxsm6996/End-to-End-machine-project-with-mlflow-.mlflow"
+        )
+        return model_evaluation_config
